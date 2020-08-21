@@ -1,3 +1,7 @@
+CREATE DATABASE tracker;
+
+USE tracker;
+
 CREATE TABLE departments (
     id INTEGER PRIMARY KEY,
     dept_name VARCHAR(30),
