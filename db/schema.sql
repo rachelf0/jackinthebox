@@ -1,10 +1,11 @@
+DROP DATABASE IF EXISTS tracker;
 CREATE DATABASE tracker;
 
 USE tracker;
 
 CREATE TABLE departments (
     id INTEGER PRIMARY KEY,
-    dept_name VARCHAR(30),
+    dept_name VARCHAR(30)
 );
 
 CREATE TABLE roles (
@@ -14,11 +15,11 @@ CREATE TABLE roles (
     department_id INTEGER
 );
 
-CREATE TABLE employee (
+CREATE TABLE employees (
     id INTEGER PRIMARY KEY,
     first_name VARCHAR(30),
     last_name VARCHAR(30),
     role_id INTEGER,
-    manager_id INTEGER,
+    manager_id INTEGER
 );
 
